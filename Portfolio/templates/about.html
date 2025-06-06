@@ -1,0 +1,31 @@
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='about_style.css')}}">
+</head>
+
+{% extends "layout.html" %} 
+
+{% block body %} 
+
+<main class="container" role="main">
+    <section class="left-column" aria-label="Image and description">
+
+      <img 
+        src="{{url_for('static', filename=('me.png '))}}"
+        alt="Portrait of ME" 
+        class="circular-image"/>
+
+      <div class="image-description">
+        Kieran Edgeworth
+      </div>
+    </section>
+    <section class="right-column" aria-label="Large text input">
+      <textarea class="large-textbox" placeholder="I am a dedicated and motivated student with a strong passion for the ever-evolving computing industry, particularly in the field of web development. My journey began with a deep curiosity about how websites and digital systems work, which led me to pursue computing at college. Through hands-on projects, work experience and courswork, I’ve developed a solid foundation in coding, problem-solving, and digital design.
+
+Now, I’m eager to take the next step by continuing my studies at university, where I hope to further develop my skills and gain deeper insights into the technologies shaping the future of the web. I’m excited to contribute to innovative projects and grow within an industry that thrives on creativity, collaboration, and constant change.
+      
+To support this journey, I decided to create a personal portfolio website as a way to showcase the projects I’ve worked on so far. It not only demonstrates my technical abilities and growth but also reflects my commitment to learning and building a future in web development."></textarea>
+    </section>
+  </main>
+
+
+{% endblock %} 

@@ -1,0 +1,54 @@
+  /* Container with max width and center */
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: var(--gap);
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  /* Left column */
+  .left-column {
+    flex: 0 0 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  /* Circular image */
+  .circular-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 16px var(--shadow-light);
+    transition: transform 0.3s ease;
+  }
+
+
+/* Right column: large text box */
+.right-column {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+}
+/* Large text box styling */
+.large-textbox {
+  width: 100%;
+  min-height: 280px;
+  border: 1.5px solid #d1d5db;
+  border-radius: var(--border-radius);
+  padding: 1rem 1.25rem;
+  font-size: 1.125rem;
+  color: var(--text-color);
+  font-family: var(--font-family);
+  resize: vertical;
+  box-shadow: inset 0 1px 3px #e5e7eb;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.large-textbox:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.5);
+}

@@ -1,0 +1,65 @@
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+  }
+  .subtitle {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    margin-bottom: 3rem;
+  }
+  .contact-grid {
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .contact-card {
+    background-color: #f9fafb;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 16px var(--shadow-light);
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+  .icon-wrapper {
+    flex-shrink: 0;
+    width: 3rem;
+    height: 3rem;
+    color: #2563eb; /* Blue accent */
+  }
+  .contact-details {
+    flex: 1;
+  }
+  .contact-title {
+    margin: 0 0 0.25rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.125rem;
+  }
+  .contact-text {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 1rem;
+    word-break: break-word;
+  }
+
+    /* Simple link style for emails/phones */
+    .contact-link {
+        color: #2563eb;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .contact-link:hover,
+      .contact-link:focus {
+        text-decoration: underline;
+        outline: none;
+      }
